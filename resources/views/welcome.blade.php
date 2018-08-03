@@ -8,7 +8,7 @@
         <title>Laravel</title>
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <link rel="stylesheet" type="text/css" href="/css/bootswatch.css">
         <script>
           window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -29,16 +29,15 @@
                 </div>
             @endif
 
-            <div class="content">
-                <wheels-table></wheels-table>
+            <nav class="navbar navbar-default navbar-static-top">
+              <div class="container-fluid">
+                  <a href="/"><div class="navbar-brand">Sim Racing Buyers Guide</div></a>
+              </div>
+            </nav>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div class="content">
+              <filter-form></filter-form>
+              <wheels-table></wheels-table>
             </div>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>

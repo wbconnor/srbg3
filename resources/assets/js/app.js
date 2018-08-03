@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 Vue.component('wheels-table', require('./components/Wheels.vue'));
+Vue.component('filter-form', require('./components/Filters.vue'));
 
 const app = new Vue({
     el: '#app',
