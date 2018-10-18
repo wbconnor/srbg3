@@ -9,6 +9,11 @@
           <td>{{project.brand.name}}</td>
           <td>{{project.model}}</td>
           <td>{{project.description}}</td>
+          <td>{{project.diameter}}</td>
+          <td>{{project.rotation}}</td>
+          <td>{{project.torque}}</td>
+          <td>{{project.brushless_motor}}</td>
+          <td>{{project.resolution}}</td>
         </tr>
       </tbody>
     </datatable>
@@ -27,9 +32,14 @@ export default {
   data() {
     let sortOrders = {};
     let columns = [
-      { width: '33%', label: 'Brand', name: 'brand' },
-      { width: '33%', label: 'Model', name: 'model' },
+      { width: '10%', label: 'Brand', name: 'brand' },
+      { width: '16.5%', label: 'Model', name: 'model' },
       { width: '33%', label: 'Description', name: 'description' },
+      { width: '10%', label: 'Diameter', name: 'diameter' },
+      { width: '10%', label: 'Rotation', name: 'rotation' },
+      { width: '10%', label: 'Torque', name: 'torque' },
+      { width: '10%', label: 'Brushless Motor', name: 'brushless_motor' },
+      { width: '10%', label: 'Resolution', name: 'resolution' },
     ];
     columns.forEach((column) => {
       sortOrders[column.name] = -1;
