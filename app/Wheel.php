@@ -31,7 +31,7 @@ class Wheel extends Model
   // Relationships
 
   public function compatibility() {
-    return $this->belongsToMany('App\Compatibility')->withTimestamps();
+    return $this->belongsToMany('App\Compatibility');
   }
 
   public function brand() {
@@ -39,6 +39,6 @@ class Wheel extends Model
   }
 
   public function drive() {
-    return $this->belongsTo('App\Drive')->withTimestamps();
+    return $this->belongsTo('App\Drive');
   }
 }
