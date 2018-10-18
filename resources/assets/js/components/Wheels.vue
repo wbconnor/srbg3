@@ -6,7 +6,7 @@
     <datatable :columns="columns" :sortKey="sortKey" :sortOrders="sortOrders" @sort="sortBy">
       <tbody>
         <tr v-for="project in filteredProjects" :key="project.id">
-          <td>{{project.brand}}</td>
+          <td>{{project.brand.name}}</td>
           <td>{{project.model}}</td>
           <td>{{project.description}}</td>
         </tr>
