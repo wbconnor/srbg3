@@ -16,7 +16,7 @@
           </td>
           <td>{{project.diameter}}</td>
           <td>{{project.drive.name}}</td>
-          <td>{{project.brushless_motor}}</td>
+          <td>{{project.brushless_motor  ? 'YES' : 'NO' }}</td>
           <td>{{project.rotation}}</td>
           <td>{{project.torque}}</td>
           <td>{{project.resolution}}</td>
