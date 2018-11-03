@@ -15,25 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('wheels-table', require('./components/Wheels.vue'));
+Vue.component('cards', require('./components/Card.vue'));
 Vue.component('filter-form', require('./components/Filters.vue'));
 
 const app = new Vue({
     el: '#app',
     //components: { projects },
 });
-
-
-// import Vue from 'vue';
-// import App from './App';
-//
-// require('./bootstrap');
-//
-// Vue.component('wheels', require('./components/Wheels.vue'));
-// // Vue.component('projects-client-side', require('./components/ProjectsClientSide.vue'));
-//
-// const app = new Vue({
-//     el: '#app',
-//     components: { App },
-//     template: '<App/>',
-// });
