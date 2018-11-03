@@ -8,7 +8,7 @@
         <title>Laravel</title>
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" type="text/css" href="/css/bootswatch.css">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
         <script>
           window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
@@ -37,7 +37,7 @@
 
             <div class="content">
               <filter-form></filter-form>
-              <wheels-table></wheels-table>
+              <cards></cards>
             </div>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
