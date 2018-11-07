@@ -7,8 +7,8 @@
             <div class="w-5/6 flex items-center">
                 <div class="w-48 h-48 mr-4 mx-auto rounded-lg border shadow bg-cover bg-center" id="image" style="background-image: url('https://www.fanatec.com/image/cache/data/wheels/CSL%20RP1X/CSL-RP1X-Big_03-1000x666.jpg')"></div>
               <div class="flex-1">
-
-                <div class="text-2xl font-bold text-grey-darkest mb-3">{{project.model}}<span class="font-normal text-grey-darker text-lg">{{project.brand.name}}</span></div>
+                <div class="text-2xl font-bold text-grey-darkest mb-1">{{project.model}}</div>
+                <div class="font-normal text-grey-darker text-lg mb-3">{{project.brand.name}}</div>
                 <div class="text-sm text-grey-darker leading-normal">{{project.description}}</div>
               </div>
             </div>
@@ -24,9 +24,9 @@
                 </div>
               </div>
               <div>
-                <div class="bg-blue-light text-white inline-block p-1 rounded text-xs">PC</div>
-                <div class="bg-blue-light text-white inline-block p-1 rounded text-xs">Xbox</div>
-                <div class="bg-blue-light text-white inline-block p-1 rounded text-xs">PS4</div>
+                <div v-for="compat in project.compatibility">
+                  <div class="bg-blue-light text-white inline-block p-1 rounded text-xs mb-1">{{ compat.name }}</div>
+                </div>
               </div>
             </div>
           </div>
