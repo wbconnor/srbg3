@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         ShiftersSeeder::class,
         PedalsSeeder::class,
         WheelsSeeder::class,
+        PicturesSeeder::class,
         CompatibilityWheelSeeder::class,
         ConnectionPedalSeeder::class,
         CompatibilityPedalSeeder::class,

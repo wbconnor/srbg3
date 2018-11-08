@@ -29,9 +29,12 @@ class Wheel extends Model
   protected $dates = ['deleted_at'];
 
   // Relationships
-
   public function compatibility() {
     return $this->belongsToMany('App\Compatibility');
+  }
+
+  public function picture() {
+    return $this->hasMany('App\Picture');
   }
 
   public function brand() {

@@ -14,7 +14,7 @@ class WheelController extends Controller
      */
     public function index()
     {
-        $wheels = Wheel::with(['brand', 'compatibility', 'drive'])->get();
+        $wheels = Wheel::with(['brand', 'compatibility', 'drive', 'picture'])->get();
 
         $columns = [
           'id',
