@@ -5,7 +5,9 @@
         <div class="mx-auto bg-white w-1/2 mt-16 p-4 rounded shadow">
           <div class="flex">
             <div class="w-5/6 flex items-center">
-                <div class="w-48 h-48 mr-4 mx-auto rounded-lg border shadow bg-cover bg-center" id="image" style="background-image: url('https://www.fanatec.com/image/cache/data/wheels/CSL%20RP1X/CSL-RP1X-Big_03-1000x666.jpg')"></div>
+                <div class="w-48 h-48 mr-4 mx-auto rounded-lg border shadow bg-cover bg-center" id="image" :style='{ backgroundImage: "url(" + project.picture[0].url + ")", }'></div>
+
+
               <div class="flex-1">
                 <div class="text-2xl font-bold text-grey-darkest mb-1">{{project.model}}</div>
                 <div class="font-normal text-grey-darker text-lg mb-3">{{project.brand.name}}</div>

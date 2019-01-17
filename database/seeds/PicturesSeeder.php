@@ -106,7 +106,7 @@ class PicturesSeeder extends Seeder
             'updated_at' => Carbon\Carbon::now()
         ),
         array(
-            'url' => 'https://images-na.ssl-images-amazon.com/images/I/81tf8wnbI-L._AC_.jpg',
+            'url' => 'https://www.bhphotovideo.com/images/images2500x2500/logitech_941_000110_g29_driving_force_racing_1374569.jpg',
             'cover' => 1,
             'wheel_id' => 14,
             'created_at' => Carbon\Carbon::now(),
