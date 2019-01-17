@@ -1,7 +1,6 @@
 <template>
   <div>
-    <ul>
-      <li v-for="project in filteredProjects" :key="project.id">
+      <div v-for="project in filteredProjects" :key="project.id">
         <div class="mx-auto bg-white w-1/2 mt-16 p-4 rounded shadow">
           <div class="flex">
             <div class="w-5/6 flex items-center">
@@ -33,8 +32,7 @@
             </div>
           </div>
         </div>
-      </li>
-    </ul>
+      </div>
   </div>
 </template>
 
